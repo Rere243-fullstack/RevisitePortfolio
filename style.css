@@ -46,6 +46,20 @@ body {
 main {
     padding: 2rem 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nouveau conteneur pour Photo + Texte côte à côte */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    text-align: left; /* Texte aligné à gauche par rapport à l'image */
 }
 
 /* Photo de profil */
@@ -55,24 +69,24 @@ img[alt="photo de profile"] {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #3498db;
-    margin-bottom: 1rem;
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
 }
 
-h1 { color: #2c3e50; }
+h1 { color: #2c3e50; margin-top: 0; }
 
 /* Cercles de Navigation */
 .container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .cercle {
     width: 120px;
     height: 120px;
-    background-color: #3498db;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -83,12 +97,23 @@ h1 { color: #2c3e50; }
     transition: transform 0.3s, background-color 0.3s;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-decoration: none; /* Si ce sont des liens */
 }
 
 .cercle:hover {
     transform: scale(1.1);
-    background-color: #2980b9;
 }
+
+/* Couleurs spécifiques pour chaque cercle */
+.cercle:nth-child(1) { background-color: #f1c40f; } /* jaune */ 
+.cercle:nth-child(2) { background-color: #e74c3c; } /* rouge */
+.cercle:nth-child(3) { background-color: #3498db; } /* bleu */
+.cercle:nth-child(4) { background-color: #3498db; color: #333; } /* bleu */
+
+.cercle:nth-child(1):hover { background-color: #2980b9; }
+.cercle:nth-child(2):hover { background-color: #27ae60; }
+.cercle:nth-child(3):hover { background-color: #c0392b; }
+.cercle:nth-child(4):hover { background-color: #f39c12; }
 
 /* --- Footer --- */
 .site-footer {
@@ -100,9 +125,16 @@ h1 { color: #2c3e50; }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Aligne tout sur la même ligne */
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Assure l'alignement sur petit écran */
+    text-align: center;
 }
 
 .footer-section h3 { margin-top: 0; color: #3498db; }
@@ -125,4 +157,4 @@ h1 { color: #2c3e50; }
     border-top: 1px solid #455a64;
     font-size: 0.9rem;
 }
-
+    
