@@ -1,25 +1,28 @@
 
-
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    
+.main-header{
+   
+   
 }
+.nav-bar ul{
+
+ 
+}
+
 /* Conteneur pour aligner les cercles */
-    .container {
+  /*  .container {
         display: flex;
         gap: 20px; /* Espace entre les cercles */
-        justify-content: center;
+       /* justify-content: center;
         margin-top: 50px;
     }
 
     /* Style de base des cercles */
-    .cercle {
+   /* .cercle {
         width: 100px;
         height: 100px;
         border-radius: 50%; /* Rend le div circulaire */
-        display: flex;
-        align-items: center;
+       /* display: flex;
+       /* align-items: center;
         justify-content: center;
         color: white;
         font-family: Arial, sans-serif;
@@ -27,6 +30,6 @@
     }
 
     /* Couleurs différentes */
-    .cercle-1 { background-color: #e7c519af; } /* Rouge/Orange */
-    .cercle-2 { background-color: #FF5733;; } /* Vert */
-    .cercle-3 { background-color: #3357FF; } /* Bleu */
+   /* .cercle-1 { background-color: #e7c519af; } /*
+    .cercle-2 { background-color: #FF5733;; } /* 
+    .cercle-3 { background-color: #3357FF; } /* 
