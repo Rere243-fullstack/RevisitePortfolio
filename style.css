@@ -113,4 +113,14 @@ body {
   margin-top: 40px;
   font-size: 14px;
 }
-    
+.social a {
+  margin-right: 15px;
+  color: #333;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #000;
+  transform: scale(1.2);
+}   
