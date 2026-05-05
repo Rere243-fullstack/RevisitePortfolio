@@ -124,3 +124,87 @@ body {
   color: #000;
   transform: scale(1.2);
 }   
+/* partie cv css*/
+/* MAIN GLOBAL */
+main {
+  
+  padding: 70px;
+}
+
+/* CONTENEUR CV */
+.cv-container {
+  width: 800px;
+  justify-content: space-between;
+  
+}
+
+/* TITRE PRINCIPAL */
+.cv-container h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 40px;
+}
+
+/* TITRES DE SECTION */
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* ITEM (expérience, formation, etc.) */
+.item {
+  margin-bottom: 20px;
+}
+
+/* LIGNE TITRE + DATE */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* SOUS-TITRE */
+.item-subtitle {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.item p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* LISTES */
+.item ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.item ul li {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* SÉPARATEUR */
+.section:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
+}
+
+/* LANGUES / COMPÉTENCES */
+.skills li,
+.languages li {
+  list-style: disc;
+}
+/*partie projets*/
+/*partie contact*/
